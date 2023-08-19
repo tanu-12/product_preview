@@ -68,5 +68,13 @@ select {
 }
 body{
     background-color: var(--Cream);
+    font-size: 14px;
 }
 
+.card{
+    width:90%;
+    padding:0 2em;
+    margin:0 auto;
+    background-color:white;
+    color:var(--Dark-grayish-blue)
+}
