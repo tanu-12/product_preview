@@ -30,6 +30,9 @@ picture {
   max-width: 100%;
   display: block;
 }
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
 
 /* Inherit fonts for inputs and buttons */
 input,
@@ -66,15 +69,51 @@ select {
 --Dark-grayish-blue: hsl(228, 12%, 48%);
 --White: hsl(0, 0%, 100%);
 }
+
+
+
+/* utility */
+
+.flex_group{
+  display: flex;
+  gap:.5rem;
+}
+
+/* general styling */
 body{
     background-color: var(--Cream);
-    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color:var(--Dark-grayish-blue);
+    margin:1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+   
 }
 
 .card{
-    width:90%;
-    padding:0 2em;
-    margin:0 auto;
-    background-color:white;
-    color:var(--Dark-grayish-blue)
+    --padding:1.5rem;
+    --spacing:.5rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: var(--White);.
+    }
+
+.product_content{
+  padding:var(--padding);
+  gap: var(--spacing);
+}
+   
+
+
+.title{
+  
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color:black;
+    gap:.2rem;
+
 }
