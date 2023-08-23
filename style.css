@@ -8,6 +8,9 @@
 ::after{
     box-sizing: border-box;
 }
+
+
+/* setting margin to avoid margin collapse */
 body,
 h1,
 h2,
@@ -20,16 +23,23 @@ dl,
 dd {
   margin: 0;
 }
+
+
+/* body foundation */
 body{
     line-height:1.5;
     min-height: 100vh;
 }
 
+
+/* img tend to work differently so setting its base property */
 img,
 picture {
   max-width: 100%;
   display: block;
 }
+
+/* content don't overflow on different width devices */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
@@ -62,7 +72,7 @@ select {
   }
 }
 
-
+/* CSS Variable  */
 :root{
 
 --Dark-cyan: hsl(158, 36%, 37%);
@@ -110,12 +120,15 @@ body{
     max-width:600px;
     }
 
+    /* desktop version */
 
     @media (min-width:600px){
       .card{
       grid-template-columns: 1fr 1fr;
       }
     }
+
+
 .product_content{
   padding:var(--padding);
   gap: var(--spacing);
@@ -167,8 +180,8 @@ color:var(--Dark-cyan);
   cursor: pointer;
 }
 
-
-.button[data-icon="shopping_cart"]::before{
+/* styling data attribute */
+.button[data-icon="shopping_cart"]::before{  
   content:"";
 width:15px;
 height: 16px;
@@ -180,7 +193,7 @@ background-image: url("image/icon-cart.svg");
 
 
 
-
+/* accessibility */
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0); 
   clip-path: inset(50%);
