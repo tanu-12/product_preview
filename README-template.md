@@ -19,17 +19,29 @@ This is a solution to the [Product preview card component challenge on Frontend 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-
+Frontend mentor challenges mainly consist of objectives that requires you to replicate a given webpage . This challenge is also same. Here a single page is to be designed that have a product card . The card have the below information.
+1. Product name
+2. Product image
+3. Product price
+4. Product description
+5. Option to add to cart
 ### The challenge
+I wanted to approach this project in a different way .
+In the past I have just focus on the fact that my project needs to work and that'll be enough 
+But overtime i have realized that this approach of making things just work won't take me anywhere 
 
-Users should be able to:
+I wanted some guidance from someone who is experienced.
+I took help from kevin powell tutorial on youtube . He is a great teacher.
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+This project might not be my original creation but it have paved a way for me on how to
+approach project and make them readable as well as optimal
+
+
+
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./Screenshot_2023-08-23_13-21-25.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
