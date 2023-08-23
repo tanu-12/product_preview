@@ -41,7 +41,10 @@ approach project and make them readable as well as optimal
 
 ### Screenshot
 
-![](./Screenshot_2023-08-23_13-21-25.png)
+desktop version : ![](./Screenshot_2023-08-23_13-21-25.png)
+
+
+mobile version : ![](./Screenshot_2023-08-23_14-21-17.png)
 
 
 
