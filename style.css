@@ -34,6 +34,10 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+h1, h2, h3, h4, h5, h6{
+  line-height: 1;
+}
+
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -62,6 +66,7 @@ select {
 :root{
 
 --Dark-cyan: hsl(158, 36%, 37%);
+--hover-cyan:hsl(158, 36%, 17%);
 --Cream: hsl(30, 38%, 92%);
 
 
@@ -76,7 +81,8 @@ select {
 
 .flex_group{
   display: flex;
-  gap:.5rem;
+  gap:1rem;
+  align-items: center;
 }
 
 /* general styling */
@@ -99,21 +105,55 @@ body{
     --spacing:.5rem;
     border-radius: 0.75rem;
     overflow: hidden;
-    background-color: var(--White);.
+    background-color: var(--White);
     }
 
 .product_content{
   padding:var(--padding);
   gap: var(--spacing);
+  display: grid;
+  line-height: 2;
 }
    
 
 
-.title{
-  
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    color:black;
-    gap:.2rem;
 
+.category{
+  font-size: .75rem;
+  letter-spacing: .5em;
+  text-transform: uppercase;
+
+}
+.title{
+ font-size: 2rem; 
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  color:black;
+  
+
+}
+.discounted{
+font-size:1.7rem;
+font-family:'Fraunces', serif ;
+color:var(--Dark-cyan);
+
+}
+
+
+.button{
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--Dark-cyan);
+  border:0;
+  border-radius:0.5em ;
+  color:var(--White);
+  font-weight: 700;  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:is(:hover,:focus)
+{
+  background-color: var(--hover-cyan);
+  cursor: pointer;
 }
