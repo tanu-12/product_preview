@@ -43,31 +43,45 @@ approach project and make them readable as well as optimal
 
 ![](./Screenshot_2023-08-23_13-21-25.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/tanu-12/product_preview)
+- Live Site URL: (https://tanu-12.github.io/product_preview/)
 
 ## My process
+
+I approached it using mobile version first 
+
+
+Here is the step by step process
+
+1. I first studied the design and compare my html with it and added tags which I could understand from design
+2. Css
+  1. I started css . Started with reset of css and used josh css reset (link provided below )
+  CSS helps provide a clean slate to start with. Properties like margin and font can cause problem 
+  2. Added utility class . Here there is only one that describe flex-group
+  3. Added general styling to give structure . General styling consisted of styling body, card , product content,
+  4. Now for specific styling . Specific styling was required for button, price, product image
+  5. Button had a flex layout consist of two items shopping cart icon and the text add to card . As for shopping cart icon
+  used data attributes because this card may require other icons like user icon, price icon
+  6. Price also had a flex layout but here both item required different styling . it also required accessibility because the 
+  original price that was crossed off might create difficulty to people who use screen reader
+  7.product image could have simple if the image remain constant but actually the here two image are used one is desktop and other for mobile hence picture element was used 
+3. Now for its responsive layout i used a min width of 600 px . when the page is expanded beyond 600px it changes its layout and 
+become two column grid which was previously a 1 column grid 
+
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
+- CSS Variables
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
@@ -103,18 +117,14 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - This helped me in resetting csss. 
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
-## Author
+- [Data Attribute](https://css-tricks.com/a-complete-guide-to-data-attributes/) - This helped me in understanding data attributes 
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- [Tutorial](https://www.youtube.com/watch?v=B2WL6KkqhLQ)-- Kevin powell helped in how to approach a project and have a clear aim.
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
 ## Acknowledgments
 
